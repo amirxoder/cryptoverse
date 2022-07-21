@@ -5,7 +5,6 @@ import { Layout, Typography, Space } from "antd";
 //syles
 import "./App.css";
 
-
 //components
 import {
   Navbar,
@@ -28,7 +27,10 @@ const App = () => {
             <Routes>
               <Route path="/exchanges" element={<Exchanges />} />
               <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
-              <Route path="/crypto/:coinId" element={<CryptoDetails />} />
+              <Route
+                path="/cryptocurrencies/:coinId"
+                element={<CryptoDetails />}
+              />
               <Route path="/news" element={<News />} />
               <Route path="/" element={<Homepage />} />
               <Route path="/*" element={<Navigate to="/" />} />
