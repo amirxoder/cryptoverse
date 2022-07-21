@@ -58,5 +58,19 @@ a:hover {
 }
 
 .routes {
-  padding: 20px ;
+  padding: 20px;
+}
+
+/* footer */
+.footer {
+  background-color: #001529;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #fff !important;
+  align-items: center;
+}
+
+.footer-title {
+  color: rgb(255, 255, 255) !important;
 }

@@ -37,8 +37,19 @@ const App = () => {
             </Routes>
           </div>
         </Layout>
+        <div className="footer" style={{ color: "red", textAlign: "center" }}>
+          <Typography.Title className="footer-title" level={5} type="secondary">
+            Cryptoverse <br />
+            All rights reserved |{" "}
+            <span style={{ fontWeight: "400" }}>AmirCodder</span>
+          </Typography.Title>
+          <Space>
+            <Link to={"/"}>Home</Link>
+            <Link to={"/exchanges"}>Exchange</Link>
+            <Link to={"/news"}>News</Link>
+          </Space>
+        </div>
       </div>
-      <div className="footer"></div>
     </div>
   );
 };
