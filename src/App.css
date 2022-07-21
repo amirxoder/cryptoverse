@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+:root {
+  --text-primary: #000;
+  --bgPrimary: #fff;
+  --bgSenodary: #f9f9f9;
+  --pink: #0071bd;
+  --light-blue: #e6f7ff;
+  --border: #d9d9d9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  color: var(--pink) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
+  overflow: hidden;
+}
+
+.navbar {
+  flex: 0.2;
+  background-color: rgb(0, 21, 41);
+}
+
+.nav-container {
+  position: fixed;
+  left: 0;
+  margin: 10px;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(0, 21, 41);
+}
+
+.logo-container {
+  background-color: #001529;
+  display: flex;
+  padding: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  margin: 0 0 0 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo a {
+  color: #fff;
+}
+
+.main {
+  flex: 0.8;
+  width: 100%;
+}
+
+.routes {
+  padding: 20px ;
 }
